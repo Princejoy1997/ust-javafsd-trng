@@ -1,22 +1,22 @@
-package com.ust;
+package com.ust_set1;
 
-public class This_Example {
-	static int x=1;
-	private int y=3;
-	public void method1(int x) {
-		This_Example t=new This_Example();
-		this.x=2;
-		y=4;
-		
-		System.out.print("Test.x:" +This_Example.x);
-		System.out.println("t.x:"+t.x);
-		System.out.println("t.y:"+t.y);
-		System.out.println("y:"+y);
-		
-	}
-	
-	public static void main(String args[]) {
-		This_Example t=new This_Example();
-		t.method1(5);
-	}
+ class This_Example {
+	 int val1;
+	 int val2;
+	 
+	 This_Example(int val1,int val2){
+		 this.val1 = val1 + val1;
+		 this.val2 = val2 + val2;
+	 }
+	 
+	 void display() {
+		 System.out.println("Value val1= "+val1+" Value val2= "+val2);
+	 }
 }
+ 
+ class Main{
+	 public static void main(String args[]) {
+		 This_Example object=new This_Example(5,10);
+		 object.display();
+	 }
+ }
