@@ -12,9 +12,9 @@ package com.ust_set1;
 	 }
 	 
 	 public void printMessage() {
-		 display();
-		 
 		 super.display();
+		 
+		 display();
 	 }
  }
  
