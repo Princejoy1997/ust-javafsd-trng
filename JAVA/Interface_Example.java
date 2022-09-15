@@ -1,17 +1,17 @@
-package com.ust_set2;
+package com.ust;
 
-interface Language{
-	void getName(String name);
-}
-class Interface_Example implements Language {
-	public void getName(String name) {
-		System.out.println("Programming Language: " +name);
-	}
+interface Vehicle1{
+	public abstract String getColor();
+	public abstract String getEngineType();
+	public static final int x=4;
 }
 
-class Main_3{
-	public static void main(String args[]) {
-		Interface_Example language=new Interface_Example();
-		language.getName("Java");
-	}
+abstract public class Interface_Example implements Vehicle1 {
+	public String getColor() {
+		return "Green";	
+		}
+	
+	/**public String getEngineType() {
+		return "Manual";
+	}*/
 }
