@@ -1,26 +1,13 @@
-package enum_prgms;
+package com.ust_set5;
 
-enum signal{
-	
-	RED(5),ORANGE(20),GREEN(15);
-	private int x;
-	private signal(int x) {
-		this.x=x;
-	}
-	
-	int getIndex() {
-		
-		return x;
-	}
+enum Size{
+	SMALL,MEDIUM,LARGE,EXTRALARGE
 }
-public class Enum_Example {
-
-	public static void main(String[] args) {
+ class Enum_Example {
+	 
+	 public static void main(String[] args) {
 		
-		signal s=signal.GREEN;
-		System.out.println(signal.GREEN.getIndex());
-		System.out.println(s.ordinal());
-		System.out.println(s.name());
-		System.out.println(s.valueOf("RED"));
+		 System.out.println(Size.SMALL);
+		 System.out.println(Size.MEDIUM);
 	}
 }
