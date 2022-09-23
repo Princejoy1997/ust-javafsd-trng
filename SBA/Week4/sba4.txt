@@ -1,0 +1,73 @@
+JAVA 8
+--------
+
+Features
+-----------
+
+1. Lambda Expression.
+2. Method References.
+3. Stream API.
+4. Default Methods.
+5. Functional Interfaces.
+6. Static Methods.
+7. Optional Class.
+8. ForEach().
+9. Collectors Class.
+10. JDBC enhancement etc.
+
+
+* LAMBDA EXPRESSION
+--------------------
+Lambda expression was introduced to favour the functional interface and helps us to write the code in functional style.
+It is a short block of code which takes in parameters and returns a value.
+Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+Lambda expression contains mainly 3 sections.
+  a) () : Paramaters.
+  b) -> : Lambda Expression symbol
+  c) () : Body
+
+* Functional Interface
+----------------------
+Functional interface are the interface which exactly has only ONE ABSTRACT METHOD.
+
+
+* Method Reference
+------------------
+Method reference is used to point/refer to the functional interface method.
+Types of Method Reference:
+  a) Reference to a Static method.
+  b) Reference to a Instance method.
+  c) Reference to a Constructor.
+
+
+* Stream API
+-------------
+Streaming:
+ 
+It is a transfer/continous flow of data from source to destination without being modified or persisted.
+A Stream in JAVA 8 can be defined as the sequence of elements from a source to destination.
+Stream does not store the elements.
+It simply performs the aggregate operations to get the desired stream of data.
+Aggregate operations that we perform on the collection, array or any other data source do not change the data of the source, they simply return a new stream.
+
+* Optional
+-----------
+Optional is a class newly introduced as a part of java 8. It is used to deal with NullPointerException.
+
+
+* Default and Static Methods
+------------------------------
+In older Java interface we cannot declare a function which cannot be defined in the implemented class.
+As a part of Java 8, In functional interface we can implement Default and Static method in it.
+
+* forEach()
+------------
+This method is used to Iterate over collections and streams in Java.
+We can also use method reference in the forEach method.
+It is a default method defined in the Iterable interface.
+Collection classes which extends Iterable interface can use forEach() method to iterate elements
+Using forEach() method we will Iterate through all elements and print to console using lambda expression as well as method reference.
+
+* Collectors class
+--------------------
+Collectors is a final class that extends the object class which provided reduction operations, such as accumulationg elements into collections,summerizing elements according to various criteria etc..
