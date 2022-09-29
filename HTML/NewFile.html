@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>My First Page</title>
+	<meta charset="UTF-8">
+	<title>My First Page</title>
+	<script type="text/javascript">
+	function check(){
+		var arr=new Array();
+		arr[0]=5;
+		arr[1]=10;
+		arr[2]=15;
+		arr[3]=20;
+		arr[4]=25;
+		
+		for(i=0;i<arr.length;i++){
+			document.write(arr[i]," ");
+		}
+	}
+	</script>
 </head>
 <body>
 
@@ -29,5 +43,6 @@
 	
 
 </table>
+<input type="button" value="submit" onclick="check()">
 </body>
 </html>
