@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function display(){
+		
+		var fname=document.getElementById("fname").value;
+		var lname=document.getElementById("lname").value;
+		var city=document.getElementById("city").value;
+		
+		document.getElementById("Heading").innerHTML="Output";
+		document.getElementById("output1").innerHTML="First Name : "+fname;
+		document.getElementById("output2").innerHTML="Last Name : "+lname;
+		document.getElementById("output3").innerHTML="City : "+city;
+		
+	}
+</script>
+</head>
+<body>
+	
+	<form>
+	<div>
+	<center>
+	<h1><u>Enter the Details</u></h1>
+	<table border="0">
+	
+		<tr><td>First Name:</td><td><input type="text" id="fname"></td></tr>
+		<tr><td>Last Name:</td><td><input type="text" id="lname"></td></tr>
+		<tr><td>City:</td><td><input type="text" id="city"></td></tr>
+		</table>
+		<input type="button" value="save" onclick="display()"/>
+		</div>
+		
+		<div>
+		<center>
+		<h1 id="Heading"><u></u></h1>
+		<p id="output1"></p>
+		<p id="output2"></p>
+		<p id="output3"></p>
+		</center>
+		</div>
+		</center>
+	</form>
+
+</body>
+</html>
