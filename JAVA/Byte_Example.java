@@ -1,6 +1,14 @@
 package com.ust;
 
+/**
+ * The type Byte example.
+ */
 class Byte_Example {
+	/**
+	 * Main.
+	 *
+	 * @param args the args
+	 */
 	public static void main(String args[]) {
 		byte a = 126;
 		System.out.println(a);
